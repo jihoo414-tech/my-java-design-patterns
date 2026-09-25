@@ -1,9 +1,6 @@
 package com.back.builder;
 
 
-//빌더 패턴을 적용하기위한 클래스.
-//Builder 정적 클래스를 이용해 필드를 주입해주고, 필드가 주입딘 객체를 반환받을 수 있다
-//Computer의 생성자에 Builder를 받아서 Builder의 필드를 주입받는다.
 public class Computer {
 
     private final String cpu;
@@ -21,7 +18,6 @@ public class Computer {
         this.isBluetoothEnabled = builder.isBluetoothEnabled;
     }
 
-    // Getter 메서드들
     public String getCpu() {
         return cpu;
     }
